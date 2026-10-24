@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "Temperature_Alert_Agent"
+version = "0.1.0"
+description = ""
+authors = [
+    "Krishna Shukla <kriishukla@gmail.com>",
+]
+readme = "README.md"
+repository = "https://github.com/kriishukla/Temperature-Alert-and-Weather-Forecast-Agent"
+homepage = ""
+
+[tool.poetry.dependencies]
+python = "^3.8"
+uAgents = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

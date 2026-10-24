@@ -1,6 +1,6 @@
 # Temperature Alert and Weather Forecast Agent
 
-This project involves the creation of two agents, a Temperature Alert Agent, and a Message Printer Agent. The Temperature Alert Agent monitors temperature conditions and sends alerts to the Message Printer Agent when the temperature exceeds defined thresholds. Additionally, the project includes a Weather Forecast feature for a specified location.
+This project involves the creation of two agents: a Temperature Alert Agent and a Message Printer Agent. The Temperature Alert Agent monitors temperature conditions and sends alerts to the Message Printer Agent when the temperature exceeds defined thresholds. Additionally, the project includes a weather forecast feature for a specified location.
 
 ## Table of Contents
 
@@ -15,86 +15,84 @@ This project involves the creation of two agents, a Temperature Alert Agent, and
 
 ## Introduction
 
-This project consists of two main components:
+This project consists of three main components:
 
-1. **Temperature Alert Agent**: Monitors the temperature at a specified location using OpenWeatherMap API. It sends alerts to the Message Printer Agent when the temperature exceeds predefined minimum or maximum thresholds.
+1. **Temperature Alert Agent:** Monitors the temperature at a specified location using the OpenWeatherMap API. It sends alerts to the Message Printer Agent when the temperature exceeds predefined minimum or maximum thresholds.
 
-2. **Message Printer Agent**: Receives and prints messages/alerts sent by the Temperature Alert Agent.
+2. **Message Printer Agent:** Receives and prints messages and alerts sent by the Temperature Alert Agent.
 
-2. **Weather Predictor**: Predict and tells about the weather through intensive Deep learning Algorithms
-
-
+3. **Weather Predictor:** Predicts weather conditions using deep learning algorithms.
 
 ## Agents
 
 ### Temperature Alert Agent
 
-- **Name**: alert_agent
-- **Seed**: alert_agent_seed
-- **Endpoint**: http://localhost:8000
-- **Port**: 8000
+- **Name:** `alert_agent`
+- **Seed:** `alert_agent_seed`
+- **Endpoint:** `http://localhost:8000`
+- **Port:** `8000`
 
 ### Message Printer Agent
 
-- **Name**: message_printer
-- **Endpoint**: http://localhost:8001
-- **Port**: 8001
+- **Name:** `message_printer`
+- **Endpoint:** `http://localhost:8001`
+- **Port:** `8001`
 
 ## Usage
 
-To use this project, you only need to follow one simple step:
+Run the main script:
 
-1. Run the main script `main.py`:
-
-
+```bash
 python main.py
+```
 
+## Prerequisites
 
-### Prerequisites
-
-- Python (>=3.6)
-- uagents package
-- requests package
-
-You can install the required Python packages using pip:
-
-
-pip install uagents 
-pip install requests
-pip install numpy
-pip install pandas
-pip install matplotlib
-pip install tensorflow
-
+- Python 3.6 or later
+- `uagents`
+- `requests`
+- `numpy`
+- `pandas`
+- `matplotlib`
+- `tensorflow`
 
 ## Installation
-Clone the repository to your local machine:
 
-git clone https://github.com/kriishukla/HackAI_Hack-230580/edit/master/README.md
-cd temperature-alert-forecast-agent
-Configure the agents and set up your environment as mentioned in the Configuration section.
+### 1. Clone the Repository
 
-Run the agents using Python:
+```bash
+git clone https://github.com/arun22106/Temperature-Alert-and-Weather-Forecast-Agent.git
+cd Temperature-Alert-and-Weather-Forecast-Agent
+```
 
+### 2. Install Dependencies
+
+```bash
+pip install uagents requests numpy pandas matplotlib tensorflow
+```
+
+### 3. Run the Project
+
+```bash
 python main.py
-### Weather Forecast
-The project also provides the option to retrieve weather forecasts for a specified location. To use this feature:
+```
 
-Run the project as mentioned in the Usage section.
+## Weather Forecast
 
-When prompted, enter the location for which you want to get the weather forecast.
+The project also provides weather forecasts for a specified location.
 
-The weather forecast will be fetched from OpenWeatherMap API and saved to a file named prediction.txt.
+1. Run the project as described in the Usage section.
+2. When prompted, enter the location for which you want a weather forecast.
+3. The forecast is retrieved using the OpenWeatherMap API and saved to `prediction.txt`.
 
 ## Configuration
-Make sure to configure the agents and API keys:
 
-Temperature Alert Agent: Configure the agent with your desired settings such as location, minimum and maximum temperature thresholds, API key, and endpoint.
+Configure the agents with the required settings, including location, minimum and maximum temperature thresholds, API key, and endpoint.
 
-Message Printer Agent: No configuration is needed for the Message Printer Agent.
+- **Temperature Alert Agent:** Configure the location, temperature thresholds, API key, and endpoint as required.
+- **Message Printer Agent:** No additional configuration is required.
+- **OpenWeatherMap API Key:** Obtain an API key from [OpenWeatherMap](https://openweathermap.org/api) and configure it in the appropriate variable in your source code. Do not publish private API keys or credentials.
 
-OpenWeatherMap API Key: Obtain an API key from OpenWeatherMap and set it in the api_key variable.
-
-
+## Contact
 
 Feel free to reach out with any feedback or suggestions.
